@@ -10,6 +10,27 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+
+set(messages
+  "msg/Conzono.msg"
+  "msg/ConzonoStamped.msg"
+  "msg/Hybzono.msg"
+  "msg/HybzonoStamped.msg"
+  "msg/Point.msg"
+  "msg/PointStamped.msg"
+  "msg/SparseMatrix.msg"
+  "msg/Zono.msg"
+  "msg/ZonoStamped.msg"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${messages}
+  DEPENDENCIES std_msgs
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
