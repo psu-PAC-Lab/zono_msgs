@@ -22,6 +22,7 @@ set(messages
   "msg/Point.msg"
   "msg/PointStamped.msg"
   "msg/SparseMatrix.msg"
+  "msg/Triplet.msg"
   "msg/Zono.msg"
   "msg/ZonoStamped.msg"
 )
