@@ -25,6 +25,10 @@ set(messages
   "msg/Triplet.msg"
   "msg/Zono.msg"
   "msg/ZonoStamped.msg"
+  "msg/PointTraj.msg"
+  "msg/ZonoTraj.msg"
+  "msg/ConzonoTraj.msg"
+  "msg/HybzonoTraj.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
