@@ -1,0 +1,14 @@
+# Service for hybrid system planning
+
+Point x0 # initial state
+Hybzono s # bounds on feasible states
+Hybzono u # bounds on feasible inputs
+HybzonoTraj psi_arr # graph of function for system as function of time
+SparseMatrix q # state stage cost matrix
+SparseMatrix r # input stage cost matrix
+SparseMatrix qn # terminal state cost matrix
+float64 tmax_sec # max time for planning
+---
+bool success # whether planning was successful
+PointTraj x_traj # state trajectory
+PointTraj u_traj # input trajectory

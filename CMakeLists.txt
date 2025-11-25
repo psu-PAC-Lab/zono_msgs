@@ -31,8 +31,13 @@ set(messages
   "msg/HybzonoTraj.msg"
 )
 
+set(services
+  "srv/HybridSysPlan.srv"
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${messages}
+  ${services}
   DEPENDENCIES std_msgs
 )
 
