@@ -10,6 +10,7 @@ SparseMatrix q # state stage cost matrix
 SparseMatrix r # input stage cost matrix
 SparseMatrix qn # terminal state cost matrix
 float64 tmax_sec # max time for planning
+float64[] z_ws # warm start vector
 ---
 bool success # whether planning was successful
 PointTraj x_traj # state trajectory
